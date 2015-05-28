@@ -10,6 +10,12 @@ And then I thought: I can make this better!
 
 So I did.
 
+# usage
+
+```
+bash player.bash foo.chill
+```
+
 # chill file format
 
 It's very easy to write your own chill files.
