@@ -1,2 +1,5 @@
+# this line is a comment and is ignored
+    # so is this line
+	# so is this one!
 hello:5
 world:1

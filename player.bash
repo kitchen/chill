@@ -17,7 +17,7 @@ if [ ! -r "$script" ]; then
 	exit 2
 fi
 
-while IFS=: read -a line ; do
+grep -v -p '^\s*#' "$script" | while IFS=: read -a line ; do
 	say "${line[0]}"
 	sleep "${line[1]}"
-done < "$script"
+done
