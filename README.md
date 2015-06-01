@@ -20,6 +20,8 @@ bash player.bash foo.chill
 
 It's very easy to write your own chill files.
 Each line is a colon separated sequence which tells the player what to say, and then how long to wait before moving on.
+Lines beginning with #, with or without leading whitespace, are ignored as comments.
+Blank lines are not ignored. They actually will cause "say" to be called with an empty string, and sleep for no time, so they are effectively ignored, but they aren't explicitly ignored. This may change in the future.
 
 A very basic "Hello World" example chill file can be found in the chill/ directory.
 
